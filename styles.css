@@ -25,6 +25,18 @@ main {
   align-items: center;
 }
 
+#container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  /* Tarjetas en vertical */
+  align-items: center; /* Centrar tarjetas horizontalmente */
+  justify-content: center;
+  gap: 20px; /* Espaciado entre tarjetas */
+  width: 100%; /* Asegura que ocupe todo el ancho */
+  padding: 20px 0; /* Espaciado superior e inferior */
+}
+
 .card img {
   width: 200px;
   height: 330px;
@@ -57,6 +69,7 @@ main {
 .card {
   position: relative;
   display: flex;
+
   flex-direction: column;
   align-items: center;
   justify-content: flex-start;
@@ -71,6 +84,7 @@ main {
   font-weight: bold;
   color: #ff0080;
   z-index: 4;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
 .robot-image {
@@ -90,7 +104,7 @@ main {
 
 .robot-name {
   position: absolute;
-  top: 140px;
+  top: 150px;
   width: 100%;
   text-align: center;
   font-size: 25px;
@@ -100,7 +114,7 @@ main {
 
 .robot-description {
   position: absolute;
-  top: 180px;
+  top: 190px;
   width: 90%;
   font-size: 12px;
   text-align: center;
